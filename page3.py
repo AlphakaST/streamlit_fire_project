@@ -1,5 +1,11 @@
 import streamlit as st
 
+st.set_page_config(
+      page_title="산불 데이터 분석",
+      page_icon="./data/forest_fire.png",
+      layout="centered"
+)
+
 st.markdown("<h1 style='text-align: center;'>[사회] 대처 및 예방 방안 ✅</h1>", unsafe_allow_html=True)
 st.subheader("")
 st.header('4. 🚩 어떤 역할을 맡아볼까요?', divider='blue')

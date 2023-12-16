@@ -1,7 +1,11 @@
 import streamlit as st
 import os
 
-
+st.set_page_config(
+      page_title="산불 데이터 분석",
+      page_icon="./data/forest_fire.png",
+      layout="centered"
+)
 
 st.markdown("<h1 style='text-align: center;'>📋 나만의 보고서 만들기</h1>", unsafe_allow_html=True)
 st.subheader("")

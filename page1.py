@@ -6,6 +6,12 @@ import os
 import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 
+st.set_page_config(
+      page_title="산불 데이터 분석",
+      page_icon="./data/forest_fire.png",
+      layout="centered"
+)
+
 conn = st.connection("gsheets", type=GSheetsConnection)
 data = conn.read(worksheet="page1", usecols=[0,1], ttl = 5)
 
