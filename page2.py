@@ -9,7 +9,7 @@ import io
 import os
 from streamlit_gsheets import GSheetsConnection
 
-conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+conn = st.connection("gsheets", type=GSheetsConnection)
 data = conn.read(worksheet="page2_1", usecols=[0,1,2], ttl = 5)
 data2 = conn.read(worksheet="page2_2", usecols=[0,1,2], ttl = 5)
 data = data.dropna(axis=0)

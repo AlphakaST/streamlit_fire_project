@@ -6,7 +6,7 @@ import os
 import pandas as pd
 from streamlit_gsheets import GSheetsConnection
 
-conn = st.experimental_connection("gsheets", type=GSheetsConnection)
+conn = st.connection("gsheets", type=GSheetsConnection)
 data = conn.read(worksheet="page1", usecols=[0,1], ttl = 5)
 
 st.markdown("<h1 style='text-align: center;'>산불, 정복하자 🔥</h1>", unsafe_allow_html=True)
