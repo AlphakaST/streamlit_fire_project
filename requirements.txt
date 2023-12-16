@@ -1,0 +1,8 @@
+streamlit
+Pillow
+requests
+matplotlib
+pandas
+numpy
+st_pages
+st-gsheets-connection
